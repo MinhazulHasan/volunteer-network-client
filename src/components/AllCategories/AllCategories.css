@@ -1,0 +1,27 @@
+.category-card{
+	width: 270px;
+    height: 320px;
+	border-radius: 10px !important;
+    transition: transform 0.7s ease;
+}
+.category-card:hover{
+    transform: scale(1.015);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.card-img{
+	height: 320px;
+	width: 270px;
+}
+.cardBody{
+	height: 80px;
+    width: 100%;
+	border-radius: 0 0 10px 10px;
+	position: absolute;
+	z-index: 1;
+	top: 75.5%;
+}
+.card-text{
+	text-align: center;
+	color: #fff;
+	top: 100%;
+}

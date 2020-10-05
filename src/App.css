@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.nav-text {
+	color: #000 !important;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center-img{
+	margin: auto !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lightgray-bg {
+    background-color: #E5E5E5;
+    background-size: 100% 100%;
+    min-height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-box {
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ABABAB;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+.form-group > input {
+    border: none;
+    border-bottom: 1px solid #ABABAB;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-btn {
+    border-radius: 50px !important;
+    width: 450px !important;
+    display: flex !important;
+    border: 1px solid #C7C7C7 !important;
+}
+.login-btn img {
+    height: 32px;
+}
+.user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+.task {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+	border-radius: 10px;
+	padding: 0.4rem;
+}
+.task-img img {
+  	width: 100%;
+}
+.admin-button button {
+	border: none;
+	background: none;
+	margin: 10px 0;
+}
+.admin-button button:focus {
+	outline: none;
+	border: none;
+}
+.table-row td{
+	border-top: none !important;
+}
+.table-row th{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+	background-color: #F5F6FA;
+	border: none !important;
+	color: #686868;
+}
+.trash-btn {
+	color: #FF444A;
+	cursor: pointer;
+}
+.btn-image {
+	width: 25px;
 }
