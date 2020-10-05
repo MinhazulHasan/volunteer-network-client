@@ -5,6 +5,7 @@ import AdminPage from './components/AdminPage/AdminPage';
 import Homepage from './components/Homepage/Homepage';
 import Login from './components/Login/Login';
 import NavBar from './components/NavBar/NavBar';
+import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import RegisterVolunteer from './components/RegisterVolunteer/RegisterVolunteer';
 import VolunteerTask from './components/VolunteerTask/VolunteerTask';
@@ -16,25 +17,28 @@ function App() {
 	return (
 		<UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
 			<Router>
-				<NavBar></NavBar>
+				<NavBar />
 				<Switch>
 					<Route path='/admin'>
-						<AdminPage></AdminPage>
+						<AdminPage />
 					</Route>
 					<Route path='/task'>
-						<VolunteerTask></VolunteerTask>
+						<VolunteerTask />
 					</Route>
 					<Route path='/login'>
 						<Login></Login>
 					</Route>
 					<PrivateRoute path='/register/:categoryID'>
-						<RegisterVolunteer></RegisterVolunteer>
+						<RegisterVolunteer />
 					</PrivateRoute>
 					<Route path='/home'>
-						<Homepage></Homepage>
+						<Homepage />
 					</Route>
 					<Route exact path='/'>
-						<Homepage></Homepage>
+						<Homepage />
+					</Route>
+					<Route path='*'>
+						<NotFound />
 					</Route>
 				</Switch>
 			</Router>
